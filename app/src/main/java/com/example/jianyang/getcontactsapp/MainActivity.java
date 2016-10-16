@@ -72,9 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.e(TAG, "Response from url: " + str);
 
+                //https://guides.codepath.com/android/Leveraging-the-Gson-Library
                 ContactListResponse contactListResponse = ContactListResponse.parseJSON(str);
                 contactList = contactListResponse.getContacts();
 
+                //Because OKHTTP client is running on a non-ui thread, hence using runOnUiThread method to update views
+                //https://www.intertech.com/Blog/android-non-ui-to-ui-thread-communications-part-1-of-5/
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

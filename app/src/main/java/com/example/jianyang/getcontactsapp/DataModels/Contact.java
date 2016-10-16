@@ -1,7 +1,7 @@
 package com.example.jianyang.getcontactsapp.DataModels;
 
 /**
- * Created by Alcatraz on 10/15/16.
+ * Created by JianYang on 10/15/16.
  */
 public class Contact {
 
@@ -11,6 +11,7 @@ public class Contact {
     private String address;
     private String gender;
 
+    // When using GSON, the Java model structure has to follow JSON object structure
     private Phone phone;
 
     public String getId() {
