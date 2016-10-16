@@ -52,7 +52,9 @@ public class ContactsAdapter extends BaseAdapter {
 
         tvName.setText(contacts.get(i).getName());
         tvEmail.setText(contacts.get(i).getEmail());
-        tvMobile.setText(contacts.get(i).getMobile());
+        tvMobile.setText(contacts.get(i).getPhone().getMobile());
+
+
         return rowView;
     }
 }

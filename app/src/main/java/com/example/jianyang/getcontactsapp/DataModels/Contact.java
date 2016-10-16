@@ -10,9 +10,8 @@ public class Contact {
     private String email;
     private String address;
     private String gender;
-    private String mobile;
-    private String office;
-    private String home;
+
+    private Phone phone;
 
     public String getId() {
         return id;
@@ -56,32 +55,18 @@ public class Contact {
         this.gender = gender;
     }
 
-    public String getMobile() {
-        return mobile;
+    public Phone getPhone() {
+        return phone;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
-    public String getOffice() {
-        return office;
-    }
-
-    public void setOffice(String office) {
-        this.office = office;
-    }
-
-    public String getHome() {
-        return home;
-    }
-
-    public void setHome(String home) {
-        this.home = home;
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 
     @Override
     public String toString() {
         return super.toString();
     }
+
+
 }
